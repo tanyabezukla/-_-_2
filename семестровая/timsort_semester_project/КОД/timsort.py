@@ -9,7 +9,7 @@ def get_min_run(n):
     return n + r
 
 
-# обычная сортировка вставками
+
 # right включительно
 # counter[0] хранит число шагов
 
@@ -105,11 +105,6 @@ def find_run(arr, start, n, counter):
     return run_end - start
 
 
-# упрощенная учебная версия timsort
-# использует:
-# 1) поиск естественных серий
-# 2) сортировку вставками для коротких серий
-# 3) попарное слияние серий
 
 def timsort(arr, count_steps=False):
     n = len(arr)
